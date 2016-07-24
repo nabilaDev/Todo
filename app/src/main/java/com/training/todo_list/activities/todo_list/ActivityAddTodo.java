@@ -1,21 +1,17 @@
 package com.training.todo_list.activities.todo_list;
 
 import android.content.Intent;
-import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.training.todo_list.Adapters.CustomAdapter;
 import com.training.todo_list.Adapters.SpinAdapter;
 import com.training.todo_list.R;
 import com.training.todo_list.model.managers.TodoManager;
@@ -24,7 +20,6 @@ import com.training.todo_list.model.models.TodoType;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -47,7 +42,7 @@ public class ActivityAddTodo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_add_todo);
+        setContentView(R.layout.lt_act_add_todo);
         spinner = (Spinner) findViewById(R.id.spinner);
         save =(Button)findViewById(R.id.btn_save);
         cancel =(Button)findViewById(R.id.btn_cancel);

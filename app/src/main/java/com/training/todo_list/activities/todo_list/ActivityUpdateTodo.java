@@ -43,7 +43,7 @@ public class ActivityUpdateTodo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_update_todo);
+        setContentView(R.layout.lt_act_update_todo);
 
         update =(Button)findViewById(R.id.btn_save);
         cancel =(Button)findViewById(R.id.btn_cancel);
